@@ -1,6 +1,6 @@
 fun checkCase(
     mustReturn: String,
-    returnValue: String,
+    returnValue: Any,
 ) {
-    println("Must return: $mustReturn \t Returned: $returnValue")
+    println("Must return: $mustReturn \t Returned: ${returnValue.toString()}")
 }
