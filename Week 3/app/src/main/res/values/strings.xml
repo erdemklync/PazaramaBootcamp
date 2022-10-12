@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FootballSquads</string>
+    <string name="teams_title">Takımını seç</string>
+    <string name="city_title">Şehir</string>
+    <string name="year_title">Kuruluş yılı</string>
+    <string name="stadium_title">Stadyum</string>
+</resources>

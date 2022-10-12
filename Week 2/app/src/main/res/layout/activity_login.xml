@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/login_text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/login_text_welcome"
+        android:textSize="42sp"
+        android:textColor="@color/purple"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat_light"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_town"
+
+        app:layout_constraintTop_toBottomOf="@id/login_text_welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/login_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-48dp"
+        app:dividerColor="@color/color_divider"
+
+        app:layout_constraintTop_toBottomOf="@id/login_image"
+        />
+    
+    <TextView
+        android:id="@+id/login_text_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/login_text_login_title"
+        android:textSize="28sp"
+        android:fontFamily="@font/open_sans_regular"
+        android:textColor="@color/black"
+
+        app:layout_constraintTop_toBottomOf="@id/login_image"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/login_text_email_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="@string/login_text_email"
+        android:textSize="15sp"
+        android:fontFamily="@font/open_sans_regular"
+
+        app:layout_constraintTop_toBottomOf="@id/login_text_login_title"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_text_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTextInputLayout"
+
+        app:layout_constraintTop_toBottomOf="@id/login_text_email_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/login_text_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="@string/login_text_password"
+        android:textSize="15sp"
+        android:fontFamily="@font/open_sans_regular"
+
+        app:layout_constraintTop_toBottomOf="@id/login_text_input_email"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_text_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        style="@style/AppTextInputLayout"
+
+        app:layout_constraintTop_toBottomOf="@id/login_text_password_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:text="@string/login_button_login"
+        style="@style/AppButton.Filled"
+
+        app:layout_constraintTop_toBottomOf="@id/login_text_input_password"
+        app:layout_constraintBottom_toTopOf="@id/login_button_sign_up"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/login_button_sign_up"
+        style="@style/AppButton.Outlined"
+
+        app:layout_constraintTop_toBottomOf="@id/login_button_login"
+        app:layout_constraintBottom_toTopOf="@id/text_forgot_password"
+        />
+
+    <TextView
+        android:id="@+id/text_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:text="@string/login_text_forgot_password"
+        android:textSize="15sp"
+        android:fontFamily="@font/open_sans_regular"
+        android:textColor="#838383"
+
+        app:layout_constraintTop_toBottomOf="@id/login_button_sign_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

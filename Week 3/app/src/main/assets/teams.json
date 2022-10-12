@@ -1,0 +1,54 @@
+[
+  {
+    "code": "fb",
+    "name": "Fenerbahçe",
+    "primaryColor": "#0023A3",
+    "secondaryColor": "#FFFF00",
+    "city": "İstanbul",
+    "stadium": "Şükrü Saraçoğlu Stadyumu",
+    "year": 1907,
+    "player": {
+      "name": "Altay Bayındır",
+      "value": "15.000.000 €"
+    }
+  },
+  {
+    "code": "gs",
+    "name": "Galatasaray",
+    "primaryColor": "#A32638",
+    "secondaryColor": "#FCB514",
+    "city": "İstanbul",
+    "stadium": "Ali Sami Yen Stadyumu",
+    "year": 1905,
+    "player": {
+      "name": "Mario Icardi",
+      "value": "22.000.000 €"
+    }
+  },
+  {
+    "code": "bjk",
+    "name": "Beşiktaş",
+    "primaryColor": "#444444",
+    "secondaryColor": "#EEEEEE",
+    "city": "İstanbul",
+    "stadium": "Vodafone Park",
+    "year": 1903,
+    "player": {
+      "name": "Dele Alli",
+      "value": "16.000.000 €"
+    }
+  },
+  {
+    "code": "ts",
+    "name": "Trabzonspor",
+    "primaryColor": "#6B0000",
+    "secondaryColor": "#66CCEB",
+    "city": "Trabzon",
+    "stadium": "Şenol Güneş Spor Kompleksi",
+    "year": 1967,
+    "player": {
+      "name": "Yusuf Yazıcı",
+      "value": "17.000.000 €"
+    }
+  }
+]

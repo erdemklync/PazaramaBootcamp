@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Strings -->
+    <string name="app_name">SecondWeek</string>
+
+    <!-- Login Screen Strings -->
+    <string name="login_text_welcome">Welcome to \n <b>Bauuss</b></string>
+    <string name="login_text_login_title">Log in</string>
+    <string name="login_text_email">Email Address</string>
+    <string name="login_text_password">Password</string>
+    <string name="login_button_login">Log in</string>
+    <string name="login_button_sign_up">Sign up</string>
+    <string name="login_text_forgot_password">Forgot password?</string>
+
+    <!-- SignUp Screen Strings -->
+    <string name="sign_up_text_title">Sign up</string>
+    <string name="sign_up_text_username">Username</string>
+    <string name="sign_up_text_email">Email Address</string>
+    <string name="sign_up_text_password">Password</string>
+    <string name="sign_up_hint_input_email">example@example.com</string>
+    <string name="sign_up_hint_input_password">8+ characters</string>
+    <string name="sign_up_button_register">Register</string>
+</resources>
